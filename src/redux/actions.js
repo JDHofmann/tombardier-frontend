@@ -1,5 +1,5 @@
-const userId = 3
-export const baseUrl = "https://tranquil-wildwood-35160.herokuapp.com"
+const userId = 2
+export const baseUrl = "http://localhost:3000"
 
 export const fetchUser = () => {
     return (dispatch) => {

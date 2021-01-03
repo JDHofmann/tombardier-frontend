@@ -4,13 +4,6 @@ import '../css/Footer.css'
 
 const Footer = (props) => {
 
-    // const loginDemoUser = () => {
-    //     props.submitLogin({
-    //         email: "e@h.com",
-    //         password: "1234"
-    //     })
-    // }
-
     return (
         <footer className="footer">
             { props.currentUser ? 
@@ -25,15 +18,10 @@ const Footer = (props) => {
                 >Edit Account</NavLink>
             </>
             :
-            // <button 
-            //     className="log"
-            //     onClick={loginDemoUser}
-                
-            // >Admin</button>
-         <NavLink 
-         className="log"
-         to="/login"
-         >Admin</NavLink>
+            <NavLink 
+            className="log"
+            to="/login"
+            >Admin</NavLink>
         }
         <p className="tombar">powered by Tombardier</p>
         </footer>
