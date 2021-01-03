@@ -17,7 +17,7 @@ Check out the **[Live Demo](https://tombardier.netlify.app/)** to try it out.
 <br>
 
 
-**This repo is built to run on it's companion [backend]() so I recommend setting that up first.**
+**This repo is built to run on it's companion [backend](https://github.com/JDHofmann/tombardier-backend) so I recommend setting that up first.**
 
 <br>
 
