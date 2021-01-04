@@ -115,7 +115,7 @@ If everything works, *Congrats!* you've got a new portfolio site!
 If your build failed, comb through this readme again and double check your files, or just write me a lengthy email and describe where my explanation went wrong.
 
 <br>
----
+
 ---
 
 <br>
