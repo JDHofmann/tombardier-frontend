@@ -1,4 +1,4 @@
-const userId = 2
+const userId = 1
 export const baseUrl = "http://localhost:3000"
 
 export const fetchUser = () => {

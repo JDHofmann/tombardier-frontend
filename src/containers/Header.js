@@ -1,13 +1,11 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import '../css/Header.css'
 
 const Header = () => {
 
     return(
         <header 
             className="header flex-center">
-                <p className="site-header"><span>Tombardier</span> portfolio building made simple</p>
             <NavLink
                 exact
                 to="/"

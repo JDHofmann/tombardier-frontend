@@ -1,7 +1,6 @@
 import React from 'react'
 import { Redirect } from "react-router-dom";
 import { AdminForm } from './AdminForm';
-import '../css/Login.css'
 
 class Login extends React.Component{
 
