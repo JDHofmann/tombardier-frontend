@@ -73,7 +73,6 @@ select {
   max-width: 600px;
   display: block;
   margin: auto;
-  /* max-width: 768px; */
 }
 
 .content-wrapper {
