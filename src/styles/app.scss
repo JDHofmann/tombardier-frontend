@@ -1,17 +1,4 @@
-$br-sm: 5px;
-$br-lg: 10px;
-
-$black-1: #202020;
-$black-2: #404040;
-$black-3: #606060;
-
-$white-1: #ffffff;
-$white-2: #c0c0c0;
-
-$gold: #ffa000;
-$green: #00a000;
-$red-1: #ff0000;
-$red-2: #F21B1B;
+@import './variable';
 
 @mixin fluidText($minPx, $max, $min){
     font-size: calc(#{$minPx} + (#{$max} - #{$min}) * ((100vw - 320px) / (1200 - 320)));
@@ -34,14 +21,6 @@ $red-2: #F21B1B;
         color: $black-1;
     }
 }
-
-
-@import './footer';
-@import './header';
-@import './localbtn';
-@import './login';
-@import './projectcard';
-@import './projectlinkcard';
 
 input, textarea, div, h1, h2, h3, h4, h5, h6, p, label, button, ul, li, a, form, header, body {
     list-style-type: none;
@@ -172,10 +151,16 @@ select {
 .user-image {
     width: 100%;
     margin: auto;
-    display: block;   
+    display: block;
+    width: 60vw;
+    max-width: 350px;
+    object-position: center;
+    object-fit: cover; 
+    border-radius: $br-lg;  
 }
 
 .image-upload-input {
+    grid-column: 1/4;
     width: 90vw;
     min-width: 100px;
     max-width: 350px;
@@ -184,6 +169,29 @@ select {
     display: block;
 }
 
+
+.image-prev-statement {
+    position: relative;
+    font-size: 1em;
+    line-height: 5vh;
+    background-color: #00000080;
+    text-align: center;
+    color: $white-1;
+    width: 60vw;
+    max-width: 350px;
+    display: block;
+    z-index: 10;
+    margin: -7.15vh auto 2.5vh;
+}
+
+.pj-image-container {
+    .image-prev-statement {
+        width: 100%;
+        max-width: 100%;
+        margin: -5vh auto 2.5vh;
+
+    }
+}
 .update{
     @include fluidText(16px, 28, 16);
     border-radius: $br-sm;
@@ -231,16 +239,11 @@ select {
     }
 }
 
-.image-prev-statement {
-    position: relative;
-    font-size: 1em;
-    line-height: 5vh;
-    background-color: #00000080;
-    text-align: center;
-    color: $white-1;
-    width: 100%;
-    display: block;
-    z-index: 10;
-    margin: -5vh auto 2.5vh;
-}
+
+@import './footer';
+@import './header';
+@import './localbtn';
+@import './login';
+@import './projectcard';
+@import './projectlinkcard';
 
