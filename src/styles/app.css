@@ -1,3 +1,65 @@
+.footer {
+  background: #202020;
+  padding: 1vh auto;
+  min-height: 5vh;
+}
+
+.log {
+  position: absolute;
+  right: 5vw;
+  display: block;
+  text-align: center;
+  height: 3vh;
+  font-size: .75em;
+  line-height: 3vh;
+  margin: 1vh auto;
+  background: none;
+  color: #c0c0c0;
+}
+
+.log:hover {
+  color: #ffa000;
+}
+
+.edit {
+  right: 20vw;
+}
+
+.tombar {
+  line-height: 5vh;
+  margin: auto 5vw;
+  font-size: .75em;
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.header {
+  min-height: 7.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vh 0;
+}
+
+.header a {
+  font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1200 - 320)));
+  padding-left: 2.5vw;
+  color: #404040;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #808080;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
 input, textarea, div, h1, h2, h3, h4, h5, h6, p, label, button, ul, li, a, form, header, body {
   list-style-type: none;
   font-family: Arial, Helvetica, sans-serif;

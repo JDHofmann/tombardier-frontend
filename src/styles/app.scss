@@ -1,7 +1,11 @@
 
+
 @mixin fluidText($minPx, $max, $min){
     font-size: calc(#{$minPx} + (#{$max} - #{$min}) * ((100vw - 320px) / (1200 - 320)));
 }
+
+@import './footer';
+@import './header';
 
 input, textarea, div, h1, h2, h3, h4, h5, h6, p, label, button, ul, li, a, form, header, body {
     list-style-type: none;

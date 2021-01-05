@@ -1,0 +1,21 @@
+.header {
+    min-height: 7.5vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1vh 0;
+}
+
+.header {
+    a {
+        @include fluidText(16px, 26, 16);
+        padding-left: 2.5vw;
+        color: #404040;
+        text-decoration: none;
+        &:hover {
+            color: #808080;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}
