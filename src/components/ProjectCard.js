@@ -6,8 +6,6 @@ import ProjectImages from './ProjectImages'
 import LocalEditBtn from '../components/LocalEditBtn'
 import Link from './Link'
 import NewLink from './NewLink'
-import '../css/ProjectCard.css'
-
 
 
 class ProjectCard extends React.Component {
