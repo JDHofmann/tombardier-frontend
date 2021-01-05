@@ -241,16 +241,15 @@ input {
   padding: 5px 0;
   background: none;
   color: #202020;
-  border: 2px solid #00a000;
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-          box-shadow: 0 0 0px 1000px #000 inset;
+  border: 1px solid #c0c0c0;
+  padding: 0 2px;
 }
 
 input:hover, input:hover {
+  padding: 0 1px;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 2px solid #00a000;
-  padding: 3px;
   color: #202020;
 }
 
@@ -267,16 +266,15 @@ textarea {
   padding: 5px 0;
   background: none;
   color: #202020;
-  border: 2px solid #00a000;
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-          box-shadow: 0 0 0px 1000px #000 inset;
+  border: 1px solid #c0c0c0;
+  padding: 0 2px;
 }
 
 textarea:hover, textarea:hover {
+  padding: 0 1px;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 2px solid #00a000;
-  padding: 3px;
   color: #202020;
 }
 
@@ -375,6 +373,7 @@ select {
   font-weight: 600;
   text-align: left;
   width: 100%;
+  background: none;
 }
 
 .solo {
