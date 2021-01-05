@@ -10,11 +10,11 @@
     a {
         @include fluidText(16px, 26, 16);
         padding-left: 2.5vw;
-        color: #404040;
+        color: $black-2;
         text-decoration: none;
         &:hover {
-            color: #808080;
-            font-weight: 400;
+            color: $black-3;
+            // font-weight: 400;
             text-decoration: underline;
         }
     }

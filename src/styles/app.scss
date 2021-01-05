@@ -1,15 +1,26 @@
-
+@import './variable';
 
 @mixin fluidText($minPx, $max, $min){
     font-size: calc(#{$minPx} + (#{$max} - #{$min}) * ((100vw - 320px) / (1200 - 320)));
 }
 
-@import './footer';
-@import './header';
-@import './localbtn';
-@import './login';
-@import './projectcard';
-@import './projectlinkcard';
+@mixin input(){
+    border-radius: $br-sm;
+    box-shadow: none;
+    filter: none;
+    padding: 5px 0;
+    background: none;
+    color: $black-1;
+    border: 1px solid $white-2;
+    padding: 0 2px;
+    transition: .3s;
+    &:hover, &:hover {
+        padding: 0 1px;
+        box-shadow: none;
+        border: 2px solid $green;
+        color: $black-1;
+    }
+}
 
 input, textarea, div, h1, h2, h3, h4, h5, h6, p, label, button, ul, li, a, form, header, body {
     list-style-type: none;
@@ -17,55 +28,29 @@ input, textarea, div, h1, h2, h3, h4, h5, h6, p, label, button, ul, li, a, form,
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-    color: #202020;
+    color: $black-1;
     border: none;
     outline: none;
     text-indent: 0;
-    border-radius: 10px;
+    border-radius: $br-lg;
     text-decoration: none;
 }
 
 input {
-    border-radius: 5px;
-    box-shadow: none;
-    filter: none;
-    padding: 5px 0;
-    background: none;
-    color: #202020;
-    border: 2px solid #00a000;
-    box-shadow: 0 0 0px 1000px #000 inset;
-    &:hover, &:hover {
-        box-shadow: none;
-        border: 2px solid #00a000;
-        padding: 3px;
-        color: #202020;
-    }
+    @include input();
     &:invalid {
-        border: .25vh solid #F21B1B;
+        border: .25vh solid $red-2;
     }
 }
 
 textarea {
-    border-radius: 5px;
-    box-shadow: none;
-    filter: none;
-    padding: 5px 0;
-    background: none;
-    color: #202020;
-    border: 2px solid #00a000;
-    box-shadow: 0 0 0px 1000px #000 inset;
-    &:hover, &:hover {
-        box-shadow: none;
-        border: 2px solid #00a000;
-        padding: 3px;
-        color: #202020;
-    }
+    @include input();
 }
 
 
 select {
-    border: 2px solid #00a000;
-    box-shadow: 0 0 0px 1000px #000 inset;
+    border: 2px solid $green;
+    // box-shadow: 0 0 0px 1000px #000 inset;
 }
 
 .App {
@@ -84,9 +69,9 @@ select {
 
 .section-header {
     @include fluidText(20px, 32, 20);
-    height: 1.5em;
+    height: 1.53em;
     line-height: 2.4em;
-    border-bottom: 3px solid #202020;
+    border-bottom: 3px solid $black-1;
     border-radius: 0;
     margin-bottom: 5vh;
 }
@@ -104,18 +89,18 @@ select {
 .content-row {
     @include fluidText(15px, 26, 15);
     display: block;
-    color: #202020;
+    color: $black-1;
     resize: none;
-    border-radius: 5px;
+    border-radius: $br-sm;
     max-width: 100%;
 }
 
 .content-row-label {
     @include fluidText(16px, 28, 16);
     display: block;
-    color: #606060;
+    color: $black-3;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: $br-sm;
 }
 
 
@@ -144,6 +129,7 @@ select {
     font-weight: 600;
     text-align: left;
     width: 100%;
+    background: none;
 }
 
 .solo {
@@ -154,7 +140,7 @@ select {
     @include fluidText(21px, 36, 21);
     font-weight: 300;
     text-align: left;
-    color: #404040;
+    color: $black-2;
     width: 100%;
 }
 
@@ -165,10 +151,16 @@ select {
 .user-image {
     width: 100%;
     margin: auto;
-    display: block;   
+    display: block;
+    width: 60vw;
+    max-width: 350px;
+    object-position: center;
+    object-fit: cover; 
+    border-radius: $br-lg;  
 }
 
 .image-upload-input {
+    grid-column: 1/4;
     width: 90vw;
     min-width: 100px;
     max-width: 350px;
@@ -177,9 +169,32 @@ select {
     display: block;
 }
 
+
+.image-prev-statement {
+    position: relative;
+    font-size: 1em;
+    line-height: 5vh;
+    background-color: #00000080;
+    text-align: center;
+    color: $white-1;
+    width: 60vw;
+    max-width: 350px;
+    display: block;
+    z-index: 10;
+    margin: -7.15vh auto 2.5vh;
+}
+
+.pj-image-container {
+    .image-prev-statement {
+        width: 100%;
+        max-width: 100%;
+        margin: -5vh auto 2.5vh;
+
+    }
+}
 .update{
     @include fluidText(16px, 28, 16);
-    border-radius: 5px;
+    border-radius: $br-sm;
     width: 100%;
     height: 35px;
     line-height: 35px;
@@ -187,12 +202,12 @@ select {
     font-weight: 400;
     align-self: center;
     background: none;
-    border: 2px solid #202020;
+    border: 2px solid $black-1;
     transition: .3s;
     &:hover, &:focus {
-        border-color: #202020;
-        background: #202020;
-        color: #ffffff;
+        border-color: $black-1;
+        background: $black-1;
+        color: $white-1;
     }
 }
 
@@ -200,15 +215,17 @@ select {
     display: block;
     margin: 1.25vh auto;
     &:hover, &:focus {
-        color: #ffffff;
-        background: #F21B1B;
+        color: $white-1;
+        background: $red-2;
     }
 }
 
 
 .lighter {
-    color: #606060;
-    border-color: #606060;
+    color: $black-3;
+    border-color: $black-3;
+    font-weight: 400;
+    border-bottom: 2px solid;
 }
 
 .mg-btn-5 {
@@ -218,22 +235,15 @@ select {
 .link-hover {
     text-decoration: underline;
     &:hover, &:focus {
-
-        color: #606060;
+        color: $black-3;
     }
 }
 
-.image-prev-statement {
-    position: relative;
-    font-size: 1em;
-    line-height: 5vh;
-    background-color: #00000080;
-    text-align: center;
-    color: #ffffff;
-    width:100%;
-    display: block;
-    display: block;
-    z-index: 10;
-    margin: -5vh auto 2.5vh;
-}
+
+@import './footer';
+@import './header';
+@import './localbtn';
+@import './login';
+@import './projectcard';
+@import './projectlinkcard';
 
