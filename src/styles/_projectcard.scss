@@ -1,6 +1,6 @@
 .pj-header {
     margin: 7.5vh 5vw 2.5vh;
-    border-bottom: 2px solid #606060;
+    border-bottom: 2px solid $black-3;
     border-radius: 0;
 }
 
@@ -16,7 +16,7 @@
     font-weight: 200;
     margin: .75vh 0;
     width: 100%;
-    color: #606060;
+    color: $black-3;
 }
 
 .pj-descript {
@@ -33,9 +33,9 @@
     display: block;
     margin: auto;
     width: 100%;
-    border-radius: 10px;
+    border-radius: $br-lg;
     max-height: 500px;
     object-position: center;
     object-fit: cover;
-    box-shadow: 0 0 6px #c0c0c0;
+    box-shadow: 0 0 6px $white-2;
 }

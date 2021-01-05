@@ -55,7 +55,7 @@
 }
 
 .header a:hover {
-  color: #808080;
+  color: #606060;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -125,7 +125,7 @@
 }
 
 .lgin-input:invalid {
-  border: .25vh solid #ff0000;
+  border: 0.25vh solid #ff0000;
 }
 
 .lgin-row {
@@ -243,6 +243,8 @@ input {
   color: #202020;
   border: 1px solid #c0c0c0;
   padding: 0 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 input:hover, input:hover {
@@ -254,7 +256,7 @@ input:hover, input:hover {
 }
 
 input:invalid {
-  border: .25vh solid #F21B1B;
+  border: 0.25vh solid #F21B1B;
 }
 
 textarea {
@@ -268,6 +270,8 @@ textarea {
   color: #202020;
   border: 1px solid #c0c0c0;
   padding: 0 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 textarea:hover, textarea:hover {
@@ -280,8 +284,6 @@ textarea:hover, textarea:hover {
 
 select {
   border: 2px solid #00a000;
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-          box-shadow: 0 0 0px 1000px #000 inset;
 }
 
 .App {
@@ -300,7 +302,7 @@ select {
 
 .section-header {
   font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1200 - 320)));
-  height: 1.5em;
+  height: 1.53em;
   line-height: 2.4em;
   border-bottom: 3px solid #202020;
   border-radius: 0;
@@ -443,6 +445,8 @@ select {
 .lighter {
   color: #606060;
   border-color: #606060;
+  font-weight: 400;
+  border-bottom: 2px solid;
 }
 
 .mg-btn-5 {
@@ -465,7 +469,6 @@ select {
   text-align: center;
   color: #ffffff;
   width: 100%;
-  display: block;
   display: block;
   z-index: 10;
   margin: -5vh auto 2.5vh;

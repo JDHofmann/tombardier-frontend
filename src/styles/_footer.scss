@@ -1,5 +1,5 @@
 .footer {
-    background: #202020;
+    background: $black-1;
     padding: 1vh auto;
     min-height: 5vh;
   }
@@ -14,10 +14,10 @@
   line-height: 3vh;
   margin: 1vh auto;
   background: none;
-  color: #c0c0c0;
+  color: $white-2;
   }
   .log:hover {
-  color: #ffa000;
+  color: $gold;
   }
   
   .edit {
@@ -28,6 +28,6 @@
   line-height: 5vh;
   margin: auto 5vw;
   font-size: .75em;
-  color: #ffffff;
+  color: $white-1;
   font-family: 'Bebas Neue', cursive;
   }
